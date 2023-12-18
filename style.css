@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+ul {
+	list-style: none;
+
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#f4c4f3 , #fc67fa);
+	line-height: 1.6;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+	display: grid;
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+
+.btn {
+	display: inline-block;
+	border: 0;
+	background: 0;
+	padding: 1em 1.5em;
+	font-size: 1.125rem;
+	font-weight: 700;
+	transition: 250ms;
+    color: darkgreen;
+    background: #dfd7d7;
+    border-radius: 10px;
+    transition: all 250ms;
+    text-transform: uppercase;
+
+    &:hover{
+        cursor: pointer;
+        background: #1b1b1b;
+        color: #fff;
+    }
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2.5rem;
+}
+
+.flow-content--s > * + *  {
+	margin-top: .5rem !important;
+}
+.flow-content--m > * + *  {
+	margin-top: 1rem !important;
+}
+.flow-content--xm > * + *  {
+	margin-top: 1.5rem !important;
+}
+.flow-content--l > * + *  {
+	margin-top: 3rem !important;
+}
+.flow-content--xl > * + *  {
+	margin-top: 3.5rem !important;
+}
+
+.title{
+    color: darkgreen;
+   text-shadow: 2px 2px #000;
+}
+
+.contents-wrapper{
+    text-align: center;
+    background: linear-gradient(#FFEFBA, #FFFFFF);
+    padding: 1rem 2.5rem;
+    width: 100%;
+    border-radius: 15px;
+    width: 85vw;
+}
+
+.joke{
+    color: green;
+    font-size: 1.125rem;
+}
+
+@media (max-width: 40.625em) {
+    html{
+        font-size: .8rem;
+    }
+}
